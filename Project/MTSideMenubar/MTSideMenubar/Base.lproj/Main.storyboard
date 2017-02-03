@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MTSideMenubar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mS-Kz-RQ1" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="tappedOnBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bce-jO-8ec"/>
+                                </connections>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-yL-QkW" customClass="UIControl">
+                                <rect key="frame" x="-50" y="283" width="100" height="100"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRl-jg-M7q">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.08235294118" green="0.094117647060000004" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMoreSlideRightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="WMU-Px-3Xz">
+                                        <rect key="frame" x="60" y="35" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0sb-q5-RNz"/>
+                                            <constraint firstAttribute="width" constant="30" id="wIL-JD-cDd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4gb-DG-XtA"/>
+                                    <constraint firstAttribute="trailing" secondItem="WMU-Px-3Xz" secondAttribute="trailing" constant="10" id="JSW-d0-ngV"/>
+                                    <constraint firstAttribute="height" constant="100" id="sAd-Pu-B3k"/>
+                                    <constraint firstItem="WMU-Px-3Xz" firstAttribute="top" secondItem="TF2-yL-QkW" secondAttribute="top" constant="35" id="uMD-n0-wlx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Round" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tappedOnLeftSideMenuBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3k-yj-2sj"/>
+                                </connections>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANs-aY-KQk" customClass="UIControl">
+                                <rect key="frame" x="325" y="283" width="100" height="100"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMv-Xp-J3G">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.08235294118" green="0.094117647060000004" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgMoreSlideLeftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="5Qw-RH-zwP">
+                                        <rect key="frame" x="10" y="35" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="V16-Ky-mWm"/>
+                                    <constraint firstAttribute="height" constant="100" id="iJg-TU-lKh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Round" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tappedOnRightSideMenuBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wya-AS-zaX"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60392156860000001" green="0.79215686269999996" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6mS-Kz-RQ1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2DX-6Q-2EH"/>
+                            <constraint firstAttribute="trailing" secondItem="6mS-Kz-RQ1" secondAttribute="trailing" id="2R8-e2-v7n"/>
+                            <constraint firstItem="6mS-Kz-RQ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="G1B-Le-zqz"/>
+                            <constraint firstItem="TF2-yL-QkW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-50" id="I9u-AF-wKm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6mS-Kz-RQ1" secondAttribute="bottom" id="Rvh-qS-cUu"/>
+                            <constraint firstItem="TF2-yL-QkW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bbl-av-ub2"/>
+                            <constraint firstItem="ANs-aY-KQk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lik-ZR-jvr"/>
+                            <constraint firstAttribute="trailing" secondItem="ANs-aY-KQk" secondAttribute="trailing" constant="-50" id="uHl-dO-GP2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controlBG" destination="6mS-Kz-RQ1" id="sIo-R6-MyR"/>
+                        <outlet property="controlSideMenuLeftBtn" destination="TF2-yL-QkW" id="u7R-zc-kuu"/>
+                        <outlet property="controlSideMenuRightBtn" destination="ANs-aY-KQk" id="m5d-zD-2Vr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgMoreSlideLeftArrow" width="25" height="11"/>
+        <image name="imgMoreSlideRightArrow" width="25" height="11"/>
+    </resources>
+</document>
