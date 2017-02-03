@@ -1,6 +1,6 @@
 # MTSideMenubar
 Easily creating side menu bar in your project with dynamic size and open/close left side as well as right side. 
-MTSideMenubar view written in Swift 3.0 and easy to use in project.
+MTSideMenubar written in Swift 3.0 and easy to use in project.
 
 ![BackgroundImage](https://github.com/manekdilip/MTSideMenubar/blob/master/Images/MTSideMenubar.gif)
 
