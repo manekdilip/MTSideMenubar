@@ -8,7 +8,7 @@ MTSideMenubar view written in Swift 3.0 and easy to use in project.
 
 ### Manually
 
-Clone or Download this Repo. Then simply drag the clas ```MTSideMenubar``` to your Xcode project.
+Clone or Download this Repo. Then simply drag the class ```MTSideMenubar.swift``` to your Xcode project.
 
 
 ###Simply way to integrate ```MTSideMenubar```
@@ -21,23 +21,22 @@ Clone or Download this Repo. Then simply drag the clas ```MTSideMenubar``` to yo
             super.viewDidLoad()
 
         }     
-    }
+        //MARK: - MoreMenuBar Delegate
+        func tappedOnEvent(sender: UIControl, sideMenubar: MTSideMenubar) {
 
-    //MARK: - MoreMenuBar Delegate
-    func tappedOnEvent(sender: UIControl, sideMenubar: MTSideMenubar) {
-      
-        if sideMenubar == sideMenubarLeft {
-            print("Left Side Menu Button Tag : ",sender.tag)
+            if sideMenubar == sideMenubarLeft {
+                print("Left Side Menu Button Tag : ",sender.tag)
+            }
+            else if sideMenubar == sideMenubarRight {
+                print("Right Side Menu Button Tag : ",sender.tag)
+            }
         }
-        else if sideMenubar == sideMenubarRight {
-            print("Right Side Menu Button Tag : ",sender.tag)
+        func moreMenuItemHide(sideMenubar: MTSideMenubar) {
+            print("moreMenuItemHide")
         }
-    }
-    func moreMenuItemHide(sideMenubar: MTSideMenubar) {
-        print("moreMenuItemHide")
-    }
-    func moreMenuItemShow(sideMenubar: MTSideMenubar) {
-        print("moreMenuItemShow")
+        func moreMenuItemShow(sideMenubar: MTSideMenubar) {
+            print("moreMenuItemShow")
+        }
     }
 ```
 
