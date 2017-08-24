@@ -176,10 +176,10 @@ class MTSideMenubar: UIView {
         
         //Rotation Effect
         UIView.animate(withDuration: 0.05, delay: TimeInterval(delay), options: [.curveEaseOut], animations: {
-            sender.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+            sender.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         }, completion: { finished in
             UIView.animate(withDuration: 0.1, delay: TimeInterval(0.0), options: [.curveEaseOut], animations: {
-                sender.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2))
+                sender.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi * 2))
                 
             }, completion: { finished in
             })
@@ -261,10 +261,10 @@ class MTSideMenubar: UIView {
         
         //Rotation Effect
         UIView.animate(withDuration: 0.1, delay: TimeInterval(delay), options: [.curveEaseOut], animations: {
-            sender.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+            sender.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         }, completion: { finished in
             UIView.animate(withDuration: 0.05, delay: TimeInterval(0.0), options: [.curveEaseOut], animations: {
-                sender.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI * 2))
+                sender.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi * 2))
                 
             }, completion: { finished in
             })
